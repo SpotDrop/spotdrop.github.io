@@ -4,21 +4,52 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SpotDrop</title>
+<meta name="description" content="SpotDrop is an iPhone app for finding London's best places to eat and drink through your friends.">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
 <style>
-  :root { --bg: #fff8f2; --fg: #241e1c; --muted: #655c58; --accent: #c91d46; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #1d1816; --fg: #f4ebe6; --muted: #b9aca5; --accent: #ff7a93; } }
-  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-  main { max-width: 36rem; margin: 0 auto; padding: 64px 20px; }
-  h1 { font-size: 2.4rem; margin: 0 0 8px; }
-  p { color: var(--muted); }
+  :root { --bg: #fff8f2; --fg: #241e1c; --muted: #655c58; --accent: #c91d46; --card: #ffffff; --line: #eadfd8; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #1d1816; --fg: #f4ebe6; --muted: #b9aca5; --accent: #ff7a93; --card: #26201d; --line: #3a312d; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 44rem; margin: 0 auto; padding: 56px 20px 64px; }
+  .icon { width: 88px; height: 88px; border-radius: 20px; display: block; margin-bottom: 20px; }
+  h1 { font-size: 2.6rem; line-height: 1.1; margin: 0 0 10px; }
+  .lede { font-size: 1.25rem; color: var(--fg); margin: 0 0 12px; }
+  .badge { display: inline-block; font-size: .85rem; font-weight: 600; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 2px 12px; }
+  h2 { font-size: 1.3rem; margin: 48px 0 16px; }
+  p { margin: .5rem 0; }
+  .muted { color: var(--muted); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; }
+  .card h3 { font-size: 1.05rem; margin: 0 0 6px; }
+  .card p { color: var(--muted); font-size: .97rem; margin: 0; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: .95rem; }
   a { color: var(--accent); }
 </style>
 </head>
 <body>
 <main>
+<img class="icon" src="icon.png" alt="SpotDrop app icon">
 <h1>SpotDrop</h1>
-<p>Find your next favourite spot through friends.</p>
-<p><a href="privacy/">Privacy policy</a> · <a href="mailto:arthurcamb@hotmail.com">arthurcamb@hotmail.com</a></p>
+<p class="lede">Find London's best places to eat and drink through the people you trust: your friends.</p>
+<span class="badge">iPhone app · London · now in beta</span>
+
+<h2>What SpotDrop does</h2>
+<div class="grid">
+  <div class="card"><h3>Your map of Spots</h3><p>Save the restaurants, bars and cafés you love and see them all on one map of London.</p></div>
+  <div class="card"><h3>Saved by friends</h3><p>See which friends saved a place before you go, and what they said about it.</p></div>
+  <div class="card"><h3>Share with a note</h3><p>Send a Spot to a friend with a personal note. "You have to try the pasta here."</p></div>
+  <div class="card"><h3>The daily Drop</h3><p>Every day, three short video clips of London venues, picked by our team.</p></div>
+</div>
+
+<h2>Where we are</h2>
+<p>SpotDrop is in beta on Apple's TestFlight, with a first group of testers in London. We are building it actively and plan to launch on the App Store soon.</p>
+<p class="muted">Restaurants, partners and anyone who wants to try the beta: we would love to hear from you.</p>
+
+<footer>
+  <a href="mailto:arthurcamb@hotmail.com">arthurcamb@hotmail.com</a> · <a href="privacy/">Privacy policy</a>
+</footer>
 </main>
 </body>
 </html>
